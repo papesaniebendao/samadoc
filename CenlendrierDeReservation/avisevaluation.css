@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    margin-left: 10px;
+}
+.navbar {
+    height: 70px;
+    background: rgb(0, 220, 220);
+    position: relative;
+    top: -20px;
+    right: 10px;
+    color: white;
+    border-radius: 50px;
+ }
+
+ #ul li
+ {
+    margin-left: 20px;
+    list-style: none;
+    color: white
+}
+
+ul{
+    position: relative;
+    top: -50px;
+    right: 100px;
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: center;
+}
+
+#ul li a{
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    font-weight: bolder;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+h2{
+    align-items: center;
+    margin-left: 15px;
+    font-size: 30px;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+
+}
+
+h1 {
+    color:rgb(0,220,220);
+}
+.div
+{
+    margin-left:100px ;
+}
+form {
+    text-align: left;
+    margin-top: 20px;
+
+}
+.label
+{
+    color: rgb(0, 220, 220);
+    font-size: 20px;
+}
+
+input {
+    margin-bottom: 10px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    width: 500px;
+}
+
+.input {
+    background-color: rgb(0,220,220);
+    color:white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 200px;
+
+}
+
+.inputext
+{
+    height: 30px;
+}
+
+.rating {
+    display: flex;
+    justify-content: left;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 36px;
+    color: #ccc;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 4px; /* Ajout de marges entre les étoiles */
+}
+
+.rating label:before {
+    content: "\2605"; /* Code Unicode pour une étoile pleine */
+}
+
+.rating input:checked ~ label {
+    color: #f70;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ndéye Nguénare DIOP - dermatologue</title>
+    <link rel="stylesheet" href="dermatologue.css">
+    <script src="https://kit.fontawesome.com/3c086030c0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <h2>SamaDoc</h2>
+        <nav>
+            <ul id="ul">
+                <li><i class="fas fa-stethoscope"></i><a href="#"> Vous etes medecin</a></li>
+                <li><i class="fas fa-question-circle"></i><a href="#" id="openModal"> Centre d'aide</a></li>
+                <li><i class="fas fa-user"></i><a href="../inscriptionConnexion/connexionInscription.html" id="connexion"> Se Connecter</a></li>
+                <li><a href="avisevaluation.html" id="openModal"><i class="fas fa-question-circle"></i>&nbsp;Avis Et Evaluation</a></li>
+                <li><a href="../messagerie/messagerie.html">Notification</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="entete">
+        <img src="Image/img7.jfif" alt="photo du spécialiste" width="110" height="93">
+        <h2>Dr Ndéye Nguénare DIOP <i class="fa fa-star-o" aria-hidden="true"></i></h2>
+        <p>Dermatologie </p>
+    </div>
+    <div class="corps">
+        <div class="part1">
+            <p>Lieu: Cabinet du Dr Ndéye Nguénare DIOP</p>
+        </div>
+        <div class="part2">
+            <h2><i class="fa fa-calendar-o" aria-hidden="true"></i> Calendrier de disponibilités</h2>
+            <h3><i class="fa fa-clock-o fa-lg" aria-hidden="true"></i> Horaires</h3>
+            <p>
+                Lundi & Mardi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09:00 - 13:00 & 15:00 - 17:00 <br><br>
+                Jeudi & Vendredi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09:00 - 13:00 & 15:00 - 17:00 <br><br>
+            </p>
+            <h3> Contacts</h3>
+            <p>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i> nguenarediop012@gmail.com <br><br>
+                <i class="fa fa-phone" aria-hidden="true"></i> 33 - 842 - 25 - 40
+            </p>
+        </div>
+        <div class="part3">
+            <h3><i class="fa fa-money" aria-hidden="true"></i> Tarifs</h3>
+            <p>Consulation de dermatologie &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13 500 FCFA</p><br>
+            <h4>Méthode de paiement</h4>
+            <ul>
+                <li>En ligne</li>
+            </ul>
+            <h3 id="h3"><i class="fa fa-info-circle" aria-hidden="true"></i> Informations</h3>
+            <p id="p">Le docteur Ndéye Nguénare DIOP vous reçoit dans son cabinet </p>
+            <h4 id="h4"><i class="fa fa-map-marker" aria-hidden="true"></i> Accés</h4>
+            <p>Cabinet médicale <br>Dakar <br>
+                KLEBER,144 Rue Joseph <br>Gomis x <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.8455684665632!2d-17.43828812489256!3d14.664703985829261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1732d4c5a2891%3A0x8019b4c187ea2a2d!2sDermacare%20-%20Dr%20Ndeye%20Nguenare%20DIOP%20-%20Partenaire%20AfriDoctor!5e0!3m2!1sfr!2ssn!4v1692235071026!5m2!1sfr!2ssn" width="300" height="150" style="border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="part4">
+            <div class="sous-part">
+                <p> Prendre rendez-vous en ligne<br><br>
+                <i class="fa fa-info-circle" aria-hidden="true"></i> Veillez renseigner les champs suivants</p>
+            </div>
+            <div class="formulaire">
+                <form action="" method="post">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" placeholder="DIOP" required><br>
+                    <label for="nom">Prénom</label>
+                    <input type="text" id="prenom" placeholder="Mouhamadou Mahmoud" required><br>
+                    <label for="nom">Motif de Consulation</label>
+                    <select id="motif" required>
+                        <option value="" disabled selected hidden>Choisisser votre motif de consulation</option>
+                        <option value="option1">Chirurgie</option>
+                        <option value="option2">Laser</option>
+                        <option value="option3">Maladie</option>
+                        <option value="option4">Néttoyage de la peau</option>
+                        <option value="option5">Verrue</option>
+                    </select>
+                    <label id="jr" for="jour">Jour de rendez-vous</label>
+                    <select id="jour" required>
+                        <option value="" disabled selected hidden>Sélectionner le jour de votre rendez-vous</option>
+                        <option value="option1">Lundi</option>
+                        <option value="option2">Mardi</option>
+                        <option value="option3">Mercredi</option>
+                        <option value="option4">Jeudi</option>
+                        <option value="option4">Vendredi</option>
+                        <option value="option4">Samedi</option>
+                    </select>
+                    <label id="hr" for="heure">Heure de rendez-vous</label>
+                    <input type="time" id="heure" min="08:00" max="19:30" value="08:12" required>
+                    <span><a href="paiement.html"><i class="fa fa-money" aria-hidden="true"></i> Paiement en ligne</a></span>
+                    <button id="sub" type="submit">Valider</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

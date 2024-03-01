@@ -1,0 +1,114 @@
+body{
+    width: 75%;
+    background-color: antiquewhite;
+}
+
+.navbar{
+    /*width: 1292px;*/
+    height: 50px;
+    background: rgb(0, 220, 220);
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    width: 100%;
+    padding: 5px;
+ }
+
+ .navbar h2{
+    margin-left: 5%;
+ }
+
+ #ul{
+    position: relative;
+    top: -50px;
+    right: 100px;
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+#ul li{
+    margin-left: 20px;
+    list-style: none;
+}
+
+#ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* application du style CSS sur l'element de classe maodifier */
+.supprimer{
+    justify-content: center;
+    text-align: center;
+    /*centrae hprizontal du conteneur de la classe modifier */
+    width: 50%;
+    margin: 0 auto;
+    /*centrae vertical du conteneur de la classs modifier */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   position: absolute;/*positionnement de l'element de classe modifier */
+}
+
+h1{
+    background: grey;
+    text-align: center;
+    color: aqua;    
+    border-radius: 20%;
+    /*centrage horizontal de l'element h1 par rapport q son conteneur */
+    width: 50%;
+    margin: 0 auto;
+    font-size: 100%;/*la taille du texte est a 100% */
+    padding: 5px 9px;
+}
+
+#titre2{
+    background: gray;
+    color:aqua;
+    text-align: center;
+    /*centrage  horizontal de l'element h2 d'identifiant titre2 */
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px 9px; 
+    font-size: large;
+}
+
+
+form{
+   border-style: double;
+   border-color: whitesmoke;
+   background:whitesmoke;
+   width: 50%;
+   margin: 0 auto;
+}
+
+input,label{
+    width: 75%;
+    margin: 0 auto;
+}
+
+input{
+    border-color: white;
+}
+input:focus{/*la couleur de bordure des inputs lors de la saisie */
+    outline-color: white;
+}
+
+.champs{
+    padding: 5px;
+}
+
+#Supprimer{
+    background:darkgrey;
+    border-color: darkgray;
+}
+input{
+    padding: 2px 5px;
+}

@@ -1,0 +1,59 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+   background: url('doc.jpg') no-repeat ;
+   background-size: cover;
+    
+}
+
+
+
+/* Styles pour le conteneur des commentaires*/
+.Commentaires{
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 12px;
+
+}
+
+/* Styles pour la liste de commentaires*/
+.Commentaires-liste{
+    padding: 20px;
+    color: blacks;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Styles pour l'encadré de commentaires */
+.Commentaires-box {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px; /* Rayon de bordure  */
+    padding: 10px;
+    margin: 30px 20px 10px 0; /* Espacement autour de la boîte (haut, droite, bas, gauche) */
+    box-sizing: border-box;
+    
+}
+.btn-charger {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid #ccc;
+    margin-top: 10px;
+}
+
+.btn-charger:hover {
+    background-color: gray;
+}

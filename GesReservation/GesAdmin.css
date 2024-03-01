@@ -1,0 +1,384 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles pour le corps de la page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    font-size: 14px;
+}
+
+/* Styles pour l'en-tête */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 220, 220);
+    color: ghostwhite;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    height: 50px;
+}
+
+
+
+.Mon-logo {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li i {
+    margin-right: 8px;
+}
+
+nav ul li:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* Styles pour la fenêtre modale */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    z-index: 1001;
+}
+
+#openModal {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Styles pour le conteneur des reservations*/
+.reservations{
+    display: flex;
+    margin-top: 50px;
+    flex: 1;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* Styles pour la liste de réservations */
+.reservation-liste{
+    flex: 1;
+    padding: 20px;
+    color: blacks;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Styles pour le calendrier de disponibilité */
+.calendrier {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+
+/* Styles pour l'encadré de réservation */
+.reservation-box {
+    background-color: beige;
+    border: 2px solid #ccc;
+    border-radius: 20px; /* Rayon de bordure plus important */
+    padding: 10px;
+    margin: 40px 20px 20px 0; /* Espacement autour de la boîte (haut, droite, bas, gauche) */
+    box-sizing: border-box;
+    width: calc(70% - 60px); /* Largeur réduite en prenant en compte les marges */
+}
+
+/* Styles pour les boutons de validation et de refus */
+
+.btn-valider, .btn-refuser {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.buttons #lab1 {
+    color: green;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.buttons #lab2{
+    color:  red;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.btn-valider:hover, .btn-refuser:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid;
+}
+
+.titre_cal{
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 35px;
+}
+
+
+/* Styles pour le formulaire de disponibilité */
+#formulaire-disponibilite {
+     border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 0;
+}
+
+#formulaire-disponibilite label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#formulaire-disponibilite input[type="week"],
+#formulaire-disponibilite select,
+#formulaire-disponibilite input[type="checkbox"],
+#formulaire-disponibilite input[type="time"] {
+    margin-bottom: 10px;
+}
+
+#formulaire-disponibilite button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Styles pour le tableau de disponibilité */
+.calendrier {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+.calendrier h2 {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.calendrier table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.calendrier th,
+.calendrier td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.calendrier td i{
+    color: green;
+}
+
+.calendrier td #i{
+    color: red;
+}
+
+.calendrier th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.calendrier input[type="time"] {
+    width: 80px;
+}
+
+.calendrier button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.calendrier button:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid;
+}
+
+.fenetre-modale {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.contenu-modale {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#boutonFermerModale {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#boutonFermerModale:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid;
+}
+/* Styles pour le footer */
+.footer {
+    background-color: white;
+    color: black;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex-basis: 22%;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Vos styles existants... */
+  
+  /* Styles pour la section Spécialités Médicales */
+  .special {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .special h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .special ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .special-list li {
+    margin-bottom: 5px;
+  }
+  
+  /* Vos styles existants... */
+  
+  
+  .social-icon {
+    font-size: 24px;
+    color: rgb(0, 220, 220);
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #00a0e9;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+  }
+  
+  .footer-bottom a {
+    color: #00a0e9;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  

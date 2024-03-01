@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modifier_compte_uilisateur.css">
+    <title>Modification du compte utilisateur</title>
+</head>
+<body> 
+    <div class="conteneur">
+            <div class="navbar">
+                <h2>SamaDoc</h2>
+                <nav>
+                    <ul id="ul">
+                        <li><i class="fas fa-stethoscope"></i><a href="#"> Vous etes medecin</a></li>
+                        <li><i class="fas fa-question-circle"></i><a href="#" id="openModal"> Centre d'aide</a></li>
+                        <li><i class="fas fa-user"></i><a href="inscriptionConnexion/connexionInscription.html" id="connexion"> Se Connecter</a></li>
+                    </ul>
+                </nav>
+            </div> 
+            <div class="modifier">
+                <h1>Bienvenue dans la partie modification du compte utilisateur !</h1><br><br>   
+                <h2 id="titre2">Modifier le compte d'utilisateur :</h2><br>
+                <form action="" method="post">
+                    <div class="champs">                    
+                        <label for="nouveaunom">Nom d'utilisateur :</label><br>
+                        <input type="text" id="nouveaunom" name="nouveaunom"><br>
+                    </div>
+                    <div class="champs">
+                        <label for="nouveauprenom" >Prénom d'utilisateur :</label><br>
+                        <input type="text" id="nouveauprenom" name="prenom"><br>
+                    </div>
+                    <div class="champs">                                            
+                        <label for="adresseMail">Email :</label><br>
+                        <input type="email" id="nouveauemail" name="nouveauemail"><br>    
+                    </div>
+                    <div class="champs">
+                    
+                        <label for="nouveaunumerotelephone">Numéro Téléphone :</label><br>
+                        <input type="tel" id="nouveaunumerotelphone" name="nouveaunumerotelphone"><br>    
+                    </div>
+                    <div class="champs">                    
+                        <label for="nouveaumotdepass">Mot de pass :</label><br>
+                        <input type="password" id="nouveaumotdepass"><br> 
+                    </div>
+                    <div class="champs">                     
+                        <label for="confirmer">confirmer :</label><br>
+                        <input type="password" id="nouveaumotdepassconfirmation"><br>  
+                    </div>
+                    <div class="champs">
+                        <input type="submit" value="Modifier" id="Modifier">
+                    </div>
+                    
+                </form>
+            </div>          
+    </div>       
+</body>
+</html>

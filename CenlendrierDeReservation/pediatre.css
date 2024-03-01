@@ -1,0 +1,328 @@
+html{
+    background: whitesmoke;
+    background-position: center
+
+}
+
+.navbar{
+    height: 50px;
+    border-radius: 50px;
+   height: 50px;
+   background: rgb(0, 220, 220);
+   position: relative;
+   top: -20px;
+   right: 10px;
+}
+
+.navbar h2{
+    position: relative;
+    left: 40px;
+    color: white;
+    top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#ul{
+    position: relative;
+    top: -50px;
+    right: 100px;
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#ul li{
+    margin-left: 20px;
+    list-style: none;
+}
+
+#ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.entete{
+    width: 1292px;
+    height: 110px;
+    background: darkcyan;
+    border: 1px solid white;
+    position: absolute;
+    top: 190px;
+    right: -3px;
+}
+
+.entete img{
+    position: relative;
+    top: 7.5px;
+    left: 170px;
+    border-radius: 80px;
+}
+
+.entete h2{
+    color: white;
+    position: relative;
+    left: 295px;
+    top: -90px;
+}
+
+.entete p{
+    color: white;
+    position: relative;
+    left: 300px;
+    top: -100px;
+    letter-spacing: 0.5px;
+}
+
+.corps{
+    width: 110%;
+    height: 170vh;
+    position: relative;
+    left: -10px;
+    top: 230px;
+}
+
+.corps .part1{
+    width: 650px;
+    height: 30px;
+    background: darkcyan;
+    border: 0.5px solid whitesmoke;
+    position: relative;
+    left: 160px;
+    border-radius: 5px;
+}
+
+.corps .part1 p{
+    color: white;
+    position: relative;
+    top: -10px;
+    left: 10px;
+    font-size: 15px;
+}
+
+.corps .part2{
+    width: 650px;
+    height: 320px;
+    background: white;
+    border: 0.5px solid black;
+    position: relative;
+    top: 20px;
+    left: 160px;
+    border-color: rgba(128, 128, 128, 0.053);
+    border-radius: 5px;
+}
+
+.corps .part2 h2{
+    color: darkcyan;
+    font-size: 17px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.corps .part2 h3{
+    color: darkcyan;
+    font-size: 19px;
+    padding-left: 50px;
+    padding-top: -10px;
+}
+
+.corps .part2 p{
+    padding-left: 60px;
+}
+
+.corps .part3{
+    width: 650px;
+    height: 510px;
+    background: white;
+    border: 0.5px solid black;
+    position: relative;
+    top: 40px;
+    left: 160px;
+    border-color: rgba(128, 128, 128, 0.053);
+    border-radius: 5px;
+}
+
+.corps .part3 h3{
+    color: darkcyan;
+    font-size: 19px;
+    padding-left: 50px;
+    padding-top: -10px;
+}
+
+.corps .part3 p{
+    padding-left: 70px;
+}
+
+.corps .part3 h4{
+    position: relative;
+    left: 70px;
+    top: -30px;
+}
+
+.corps .part3 ul{
+    position: relative;
+    top: -40px;
+    left: 60px;
+}
+
+.corps .part3 #h3{
+    color: darkcyan;
+    font-size: 19px;
+    position: relative;
+    top: -35px;
+}
+
+.corps .part3 #p{
+    position: relative;
+    top: -40px;
+}
+
+.corps .part3 #h4{
+    color: darkcyan;
+    font-size: 19px;
+    position: relative;
+    top: -35px;
+}
+
+.corps .part3 iframe{
+    position: relative;
+    left: 270px;
+    top: -140px;
+}
+
+
+.corps .part4{
+    width: 400px;
+    height: 600px;
+    position: relative;
+    top: -853px;
+    right: 120px;
+    float: right;
+    background: white;
+    border: 0.5px solid black;
+    position: relative;
+    border-color: rgba(128, 128, 128, 0.053);
+    border-radius: 5px;
+}
+
+.corps .part4 .sous-part{
+    width: 400px;
+    height: 65px;
+    background: rgba(255, 0, 0, 0.621);
+    position: relative;
+    top: -15px;
+}
+
+.corps .part4 .sous-part p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 5px;
+}
+
+.formulaire{
+    width: 397px;
+    height: 595px;
+    position: relative;
+    top: -14.5px;
+    left: 1px;
+}
+
+.formulaire label{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.formulaire input{
+    width: 85%;
+    height: 30px;
+    position: relative;
+    display: block;
+    top: 12px;
+    left: 10px;
+}
+
+.formulaire input::placeholder{
+    font-size: 14.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.formulaire #motif{
+    width: 86%;
+    height: 40px;
+    display: block;
+    position: relative;
+    top: 13px;
+    left: 12px;
+}
+
+#jr{
+    position: relative;
+    top: 35px;
+}
+
+.formulaire #jour{
+    width: 86%;
+    height: 40px;
+    display: block;
+    position: relative;
+    top: 40px;
+    left: 12px;
+}
+
+#hr{
+    position: relative;
+    top: 65px;
+}
+
+.formulaire #heure{
+    position: relative;
+    top: 70px;
+    left: 12px;
+}
+
+.formulaire span{
+    width: 200px;
+    height: 60px;
+    border: 8px solid darkcyan;
+    background-color: darkcyan;
+    position: relative;
+    top: 85px;
+    left: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.formulaire a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    background: darkcyan;
+}
+
+#sub{
+    width: 220px;
+    height: 40px;
+    position: relative;
+    top: 160px;
+    right:  70px;
+    cursor: pointer;
+    background: darkcyan;
+    color: white;
+    border-color: white;
+}
+
+#sub:hover{
+    background: rgba(255, 0, 0, 0.621);
+    color: white;
+    border-color: white;
+}

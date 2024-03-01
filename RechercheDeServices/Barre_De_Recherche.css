@@ -1,0 +1,338 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+header {
+  background-color: rgb(0, 220, 220);
+  color: ghostwhite;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 50px;
+  height: 50px;
+  width: 50%;
+  margin-bottom: 15%;
+}
+header .logo {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav ul li {
+  position: relative;
+}
+
+.link-text {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Ajoutez un espace entre l'icône et le texte */
+nav ul li i {
+  margin-right: 8px;
+}
+
+.search-container {
+  text-align: left;
+  margin-top: 170px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+#search-input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: rgb(147, 198, 198);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#LienService{
+  color:rgb(red, green, blue) ;
+  
+}
+
+.barre_de_recherche{
+  text-align: center;
+  margin-top: 70px;
+}
+
+.barre_de_recherche input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 20px;
+
+}
+.barre_de_recherche button{
+
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+}
+.bloc_image {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 250px;
+
+  }
+
+.image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-basis: 30%;
+}
+
+.conteneur{
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.conteneur img{
+   max-width: 100%;
+  height: auto;
+  border-radius: 5px;s
+}
+.image p{
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  background-color: white; 
+  padding: 10px; 
+  border-radius: 5px;
+}
+
+/* Styles pour le footer en général */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex-basis: 22%;
+}
+
+.footer-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Vos styles existants... */
+
+/* Styles pour la section Spécialités Médicales */
+.special {
+  display: flex;
+  flex-direction: column;
+}
+
+.special h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.special ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.special-list li {
+  margin-bottom: 5px;
+}
+
+/* Vos styles existants... */
+
+
+.social-icon {
+  font-size: 24px;
+  color: rgb(0, 220, 220);
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #00a0e9;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+
+.footer-bottom a {
+  color: #00a0e9;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Styles pour les médias mobiles (ajustez selon vos besoins) */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  
+  .footer-section {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.special{
+  display: flex;
+  list-style: none;
+  font-size: 14px;
+
+}
+.specialiste {
+   display: inline-block;
+   font-size: 14px;
+ } 
+
+.service{
+  display: flex;s
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 250px;
+  }
+.service-text{
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+h2{
+  text-align: center;
+}
+
+
+#suggestions {
+  position: absolute;
+  top: calc(100% - 440px); /* Place la boîte plus haut, à 200px en dessous de la barre de recherche */
+  left: 0;
+  width: 100%; /* Occupe toute la largeur de la barre de recherche */
+  background-color: white;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 1; /* Assure que la boîte est au-dessus des autres éléments */
+}
+
+
+/* Styles pour la fenêtre modale */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Placez la fenêtre modale au-dessus de tous les autres éléments */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  z-index: 1001; /* Placez le contenu de la fenêtre modale au-dessus de la fenêtre modale elle-même */
+}
+
+
+#openModal {
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Enlève le soulignement */
+}
+
+#connexion{
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Enlève le soulignement */
+}
+
+/* Ajoutez un arrière-plan avec une image à la section */
+.header-search-section {
+  background-image: url('recherche.jpg'); /* Remplacez le chemin par le chemin réel de votre image */
+  background-size: cover;
+  background-position: center;
+  display: flex; /* Utilisez Flexbox pour centrer le contenu */
+  flex-direction: column; /* Alignez les éléments en colonne */
+  justify-content: center; /* Centre le contenu verticalement */
+  align-items: center; /* Centre le contenu horizontalement */
+  height: 100vh; /* Hauteur de la section (80% de la hauteur de la vue) */
+  /* Ajoutez d'autres styles selon vos besoins */
+}
+
+#Apropos{
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Enlève le soulignement */
+}
+/*pour le titre*/
+#pageAccueil{
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Enlève le soulignement */
+}

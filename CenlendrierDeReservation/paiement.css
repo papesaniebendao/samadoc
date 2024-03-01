@@ -1,0 +1,32 @@
+/*Application de la photo en arriere plan de la page paiement*/
+body{
+    background-image: url("logoservicedepaiement/imagepaiement.png");
+}
+
+
+header{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background: rgb(0, 220,220);
+    margin-bottom: 10px;
+    margin-top: 0px;
+    height:50px;
+}
+#hearder-title{
+    margin-top: 0px;
+}
+
+
+/*La dispositon des service de paiement en horizontal avec un espacement de 50 pixels*/
+
+
+.service { 
+    display: flex;
+    position:relative;
+    margin:10px;
+    flex-wrap: wrap;
+    gap: 50px;
+    color:white;
+}

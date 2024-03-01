@@ -1,0 +1,318 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+    /* Styles de l'en-tête */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: transparent;
+      color: ghostwhite;
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      justify-content: space-between;
+      border: none;
+      border-radius: 50px;
+      height: 50px;
+      transition: background-color 0.3s;
+      z-index: 100;
+  }
+
+  /* Styles de l'en-tête avec fond fixe */
+  header.fixed {
+    background-color: rgb(0, 220, 220); /* Fond fixe après le défilement */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+  header .Mon-logo {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px; /* Taille de la police */
+    font-weight: bold; /* Épaisseur de la police */
+  }
+  
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  .link-text {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  /* Ajoutez un espace entre l'icône et le texte */
+  nav ul li i {
+    margin-right: 8px;
+  }
+  
+  nav ul li {
+    margin-right: 20px; /* Espace entre les éléments */
+    font-size: 16px; /* Taille de la police des éléments de la liste */
+  }
+  
+  /* Style pour mettre en évidence l'élément survolé */
+  nav ul li:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: underline;
+  }/*fin des selecteurs sur l'entete*/
+
+  #connexion{
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement */
+  }
+  
+  #pageAccueil
+  {
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement */
+  }
+
+/*Styles pour les différentes sections*/
+.section {
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.first-section {
+  background: url('doctor.jpg') no-repeat center top / cover;
+  height: 836px;
+  margin-top: 10px;
+  animation: alternateBackgrounds 20s linear infinite;
+}
+
+.second-section {
+  background-color: black;
+  position: relative;
+}
+
+.third-section {
+  background-color: ;
+  position:relative;
+}
+.fourth-section
+{
+  background-color: black;
+  position: relative;
+}
+.fifth-section{
+  background-color: white;
+  position: relative;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-content {
+  flex: 1;
+  padding: 20px;
+  color: rgb(0, 220, 220);
+}
+
+.right-content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.right-content img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%; /* Pour éviter que l'image ne dépasse la hauteur de la section */
+}
+
+
+@keyframes alternateBackgrounds {
+  0%, 100% {
+      background-image: url('../images/doctor.jpg');
+  }
+  33% {
+      background-image: url('../images/doctor1.jpg');
+  }
+  66%{
+    background-image: url('../images/doctor2.jpg');
+  }
+}
+
+/* Styles pour la fenêtre modale */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Placez la fenêtre modale au-dessus de tous les autres éléments */
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    z-index: 1001; /* Placez le contenu de la fenêtre modale au-dessus de la fenêtre modale elle-même */
+}
+
+#openModal {
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement */
+  }
+
+/* Style for the "Se Connecter" link */
+#connexion-link {
+  background-color: rgb(0, 220, 220);
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  display: inline-block;
+  min-width: 500px; /* Adjust this value for desired width */
+  text-align: center; /* Center the text horizontally */
+  margin-top: 0;
+  transform: translateY(-50%);
+}
+
+/* Style for the login link container */
+.login-link {
+  z-index: 100;
+}
+
+/* Styles pour le footer en général */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex-basis: 22%;
+}
+
+.footer-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Vos styles existants... */
+
+/* Styles pour la section Spécialités Médicales */
+.special {
+  display: flex;
+  flex-direction: column;
+}
+
+.special h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.special ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.special-list li {
+  margin-bottom: 5px;
+}
+
+/* Vos styles existants... */
+
+
+.social-icon {
+  font-size: 24px;
+  color: rgb(0, 220, 220);
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #00a0e9;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+
+.footer-bottom a {
+  color: #00a0e9;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Styles pour les médias mobiles (ajustez selon vos besoins) */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  
+  .footer-section {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+#Apropos{
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Enlève le soulignement */
+}
+
+#medecin
+{
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement */
+}

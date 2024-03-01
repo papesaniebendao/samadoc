@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avis et Evaluations </title>
+    <link rel="stylesheet" href="avisevaluation.css">
+</head>
+<body>
+    <header class="navbar">
+        <h2>SamaDoc</h2>
+        <nav>
+            <ul id="ul">
+                <li><i class="fas fa-question-circle"></i><a href="../GestionContinues/Apropos/A_propos.html" id="openModal"> Centre d'aide</a></li>
+                <li><i class="fas fa-question-circle"></i><a href="../GestionContinues/paged'aige.html" id="openModal"> Centre d'aide</a></li>
+                <li><i class="fas fa-user"></i><a href="inscriptionConnexion/connexionInscription.html" id="connexion"> Se Connecter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="div">
+        <h1>Avis Et Evaluations</h1>
+    <div id="comments">
+        <!-- Les commentaires seront affichés ici -->
+    </div>
+    <form id="commentForm" >
+        <label for="name" class="label">prenom & nom :</label><br>
+        <input type="text" id="name" class="inputext" required><br> <br>
+         <label for="rating" class="label">votre satisfaction:</label>
+        <div class="rating">
+            <input type="checkbox" id="star1" name="rating" value="1"><label for="star1"></label>
+            <input type="checkbox" id="star2" name="rating" value="2"><label for="star2"></label>
+            <input type="checkbox" id="star3" name="rating" value="3"><label for="star3"></label>
+            <input type="checkbox" id="star4" name="rating" value="4"><label for="star4"></label>
+            <input type="checkbox" id="star5" name="rating" value="5"><label for="star5"></label>
+        </div> <br>
+        <label for="comment" class="label">Commentaire :</label><br>
+        <textarea id="comment" required></textarea><br> <br>
+        <input type="submit" value="Envoyer" class="input"> &nbsp;
+        <input type="reset" class="input">
+    </form>
+    </div>
+    
+
+    <script src="avisevaluation.js"></script>
+</body>
+</html>

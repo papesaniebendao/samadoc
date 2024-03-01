@@ -1,0 +1,189 @@
+header {
+  background-color: rgb(0, 220, 220);
+  color: ghostwhite;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 50px;
+  height: 50px;
+  width: 100%;
+
+}
+header .logo {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+nav ul li {
+  position: relative;
+}
+
+.link-text {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Ajoutez un espace entre l'icône et le texte */
+nav ul li i {
+  margin-right: 8px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.entete {
+  width: 1292px;
+  height: 110px;
+  background: darkcyan;
+  border: 1px solid white;
+  position: absolute;
+  top: 190px;
+  right: -3px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.entete a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.entete img {
+  /*position: relative;*/
+  top: 7.5px;
+  left: 170px;
+  border-radius: 80px;
+}
+
+.entete h2 {
+  color: rgb(0, 220, 220);
+  /*position: relative;*/
+  left: 295px;
+  top: -90px;
+}
+.conteneur{
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8NDQ0ODQ0NDQ0NDQ0NDQ8NDQ8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJTUrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDisZFRkrKy0tNy03Ky03Ny0rKy0tKys3Ky0rKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAL4BCgMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAACAQADBAUG/8QAJxABAQEAAQIEBgMBAAAAAAAAAAERAiHwMXGhsRJBUYGR0WHh8cH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APxMjY0Kde/FFSQpGiyAsixoUBpCkaQpAaQpEkKA0hSNIQNi40hQExZCxpBUxcXFwBxcXGwExsLEwBxsLGwBxMJAHEw0sAcQkwQUJAFCQHz4saKBTr5+6xIc6+fuCQo0WAsKRpCgNCkaQgZZGkKQVpCxpCkBIWNIUAcXCxsQHFxcbAHGwsbAHEJlBxMJAHGVKA2IY2CDUJKKLKgj58WNFgLCiQoBT1WJCgLJ3a6Z+vTw80k/Xc+58Zf+AiyJIcgNCkaQoK0hSNFkQbFxZFwEi4uNgJiyeX5WRs/X8XvPAB9MSulnQQBiQBQkUFCSgLMlBKhNO/lu/T8CDenomd9P2UnonwfzAfNKJFgFCgw4CyOkn4GHx46BcZq2/KJb8o0gLDgw4KshSJDiDQsaLAWRcaLATFxVzy7mAn5/C5i5g2glolYgCyoAoSUBqFRUSoqUGST0/Wey5rcrnSAPK50gKmCPBCgwoBQuMGEBSlBhQChwIcA51WDHSCrCgw4gsKJCgLCkGHKDYlXUBkZAbUqoCJVqUBqKlBEq1FETVtGg2jWqUGTWqCPDCkGFoEUCFAOFBhQChwIUFOFAhwDhQIcQKFAlKUDi6GtoHraOtoFqaOtoLaiamgupUqaDJa1RRkta0bQZK2pQYayCNqNU0HjWDKQFCgQoBwoEKAcOOcKUHSUpXOUoK6RZQhRA5V0NLQLV0NXVCYdbUC1tHW0F1NTU1RdTUtYRdHWtTQbUSpaC2jrDoLalqamg2tqJoPJClCLAdFgykBQoEKAcKBCgHKUrnKcA5V1z0tA9XQlXQPW0NXUD1tDW1VLW0dTQLW0dTRCa0bR0C1NHU0C1KOtoNamtR0FtTU1NBbUTUB5osCUpQOFxrnKUB0WUJS0DlOBx/vv8Fvf1/sCi6GroHKuhq6B6uhraB6uhraDpqaGropawasvt37iK1o2/fzHQPU0dTQLU0dTQLU1NTQXWo6mgupqWpO+/uCpq2/YfjB5pVlDV0HSVZQlWA6Slx7/kIe/87wD2efj16HOnWhLnW/4N5aB6soSroHq6GroHq6GtoHraGtoHraOrL36gfh8+9Tx78B3x6ry550n+AvKzwHQ1tAtTR1NAtbQ1tAtTR1NAtTR1gKdW3p3s6dwbe/6WX50Fn1o/HPpA5c9HQcZVlDS0DlKVzlKA6Snx5z9OOrKDpeWrK56soOraE5KB6uueroHq6GtoHraGtKDpK3xeQXkmg63n9B1z1tB03U0Nbd8/cC1NHU0C1tDU0D1NHU0C1viEbQdJyncHlz0NTQLW+4a2g5auhKU+qjpK2hqyoHpa5yroOmrrnq6Dpqzk56ug6NoStQdNbXPV0Dlb4ht+SaB62hqaB62hraBa2jqaB7vn7poau6C6mjqaB62iNoFeSaOtoLraOpoFqaOpqj//2Q==);
+}
+.section{
+  height: 790px;
+   width: 600px;
+   background-color: rgb(254, 255, 255);
+   text-align: center;
+   margin-top: 100px;
+   border-radius: 20px;
+   margin-bottom: 50px;
+}
+.image{
+  width: 100px;
+  height: 100px;
+  border-radius: 67%;
+
+}
+.aside{
+  margin-top: 100px;
+}
+
+/* Styles pour le footer en général */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex-basis: 22%;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Vos styles existants... */
+  
+  /* Styles pour la section Spécialités Médicales */
+  .special {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .special h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .special ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .special-list li {
+    margin-bottom: 5px;
+  }
+  
+  /* Vos styles existants... */
+  
+  
+  .social-icon {
+    font-size: 24px;
+    color: rgb(0, 220, 220);
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #00a0e9;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+  }
+  
+  .footer-bottom a {
+    color: #00a0e9;
+    text-decoration: none;
+    margin: 0 10px;
+  }

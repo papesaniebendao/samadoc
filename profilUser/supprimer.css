@@ -1,0 +1,231 @@
+/* styles.css */
+
+
+  
+header {
+    background-color: rgb(0, 220, 220);
+    color: ghostwhite;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 100%;
+   
+  }
+  header .logo {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav li {
+    cursor: pointer;
+    font-weight: bold;
+
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  .link-text {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  /* Ajoutez un espace entre l'icône et le texte */
+  nav ul li i {
+    margin-right: 8px;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+}
+
+.header_section{
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  padding: 9px;
+  margin: auto;
+
+
+}
+
+
+
+.conteneur{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  height: 900px;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGglQzMlQjRwaXRhbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+ background-repeat: no-repeat;
+ background-size: cover;
+ justify-content: space-around;
+ }
+
+ .lien1{
+  height: 65px;
+  width: 100px;
+  text-align: center;
+  padding-top: 10px;
+ background-color: rgb(69, 251, 14);
+  border: none;
+  border-radius: 15px;
+  position: relative;
+  float: left;
+  margin-left: 155px;
+}
+.lien2{
+  height: 65px;
+  width: 100px;
+  text-align: center;
+  padding-top: 10px;
+ background-color: rgb(255, 16, 16);
+  border: none;
+  border-radius: 15px;
+  position: relative;
+  float: right;
+  margin-right: 155px;
+}
+
+
+ .section{
+    height: 200px;
+    border-radius: 15px;
+    background-color:  rgb(255, 255, 255);
+    margin-top: 200px;
+    display: block;
+    padding: 10px,20px;
+    justify-content: space-around;
+    width: 50%;
+    text-align: center;
+    
+ }
+
+
+
+
+/* Styles pour le footer en général */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex-basis: 22%;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Vos styles existants... */
+  
+  /* Styles pour la section Spécialités Médicales */
+  .special {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .special h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .special ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .special-list li {
+    margin-bottom: 5px;
+  }
+  
+  /* Vos styles existants... */
+  
+  
+  .social-icon {
+    font-size: 24px;
+    color: rgb(0, 220, 220);
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #00a0e9;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+  }
+  
+  .footer-bottom a {
+    color: #00a0e9;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+/* Styles pour la fenêtre modale */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Placez la fenêtre modale au-dessus de tous les autres éléments */
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    z-index: 1001; /* Placez le contenu de la fenêtre modale au-dessus de la fenêtre modale elle-même */
+}
+
+#openModal {
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement */
+  }
+
+
+

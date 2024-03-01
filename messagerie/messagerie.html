@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="messagerie.css">
+    <title>Envoyer un message</title>
+</head>
+<body>    
+    <div class="container1">               
+        <div class="navbar">
+            <h2>SamaDoc</h2>
+            <nav>
+                <ul id="ul">
+                    <li><i class="fas fa-stethoscope"></i><a href="#"> Vous etes medecin</a></li>
+                    <li><i class="fas fa-question-circle"></i><a href="#" id="openModal"> Centre d'aide</a></li>
+                    <li><i class="fas fa-user"></i><a href="inscriptionConnexion/connexionInscription.html" id="connexion"> Se Connecter</a></li>
+                </ul>
+            </nav>
+        </div>       
+        <h1>Bienvenue dans le messagerie !</h1>
+        <div class="container2">        
+            <div class="header2">
+                <h2> Envoyer un message </h2>
+            </div>
+            <form  action="mailto:camaralimne597@gmail.com" method="post" class="formulaire">
+                <div class="champs">
+                    <label for="nomEmetteur"> Nom émetteur</label><br>
+                    <input type="text" id="nomEmetteur" name="numEmetteur" required><br>
+                </div>
+                <div class="champs">
+                    <label for="numEmetteur">Numéro émetteur</label><br>
+                    <input type="tel" id="numEmetteur" name="nomEmetteur" required><br>
+                </div>
+                <div class="champs">
+                    <label for="numdestinataire">Numéro destinataire</label><br>
+                    <input type="tel" id="numdestinataire" name="numdestinataire"  required><br>
+                </div>
+                <div class="champs">
+                    <label for="contenu">Corps du message</label><br>
+                    <input type="text" id="contenu"  name="contenu"  placeholder="Ecrivez votre message ..." required><br>
+                </div>
+                <button type="submit">Envoyer</button><br>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

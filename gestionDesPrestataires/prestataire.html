@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prestataires.css">
+    <script src="prestataires.js" defer></script>
+    <title>Liste des Spécialistes</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Les prestataires</h1>
+        <!-- Ajoutez d'autres éléments d'en-tête ici, comme la navigation, le logo, etc. -->
+    </header>
+
+    <div class="espace"></div>
+
+    <div class="specialistes">
+        <h2>Médecin généraliste :</h2>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img4.jfif" alt="Abdoulaye Diagne">
+            <p>Abdoulaye Diagne</p>
+            <button class="modifier">Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img5.jpeg" alt="Issakha Sidibé">
+            <p>Issakha Sidibé</p>
+            <button class="modifier">Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+    </div>
+    
+    <div class="specialistes">
+        <h2>Chirurgie :</h2>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img2.jfif" alt="Ndeye Fatou Coulibaly">
+            <p>Ndeye Fatou Coulibaly</p>
+            <button class="modifier" data-id="1" >Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img1.jfif" alt="Rayan Saad">
+            <p>Rayan Saad</p>
+            <button class="modifier" data-id="2" >Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img3.jfif" alt="Minhas Trahir">
+            <p>Minhas Trahir</p>
+            <button class="modifier" data-id="3" >Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+    </div>
+
+    <div class="specialistes">
+        <h2>Dentiste :</h2>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img9.jpeg" alt="Affissatou Ndoye Diop">
+            <p>Affissatou Ndoye Diop</p>
+            <button class="modifier" data-id="4" >Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img12.jfif" alt="Moustapha ndiouck">
+            <p>Moustapha ndiouck</p>
+            <button class="modifier" data-id="5" >Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img10.jpg" alt="Amadou Lamine Niang">
+            <p>Amadou Lamine Niang</p>
+            <button class="modifier" data-id="6" >Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+    </div>
+
+    <div class="specialistes">
+        <h2>Dermatologue :</h2>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img6.jpg" alt="Karim Ndiaye">
+            <p>Karim Ndiaye</p>
+            <button class="modifier" data-id="7" >Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img7.jfif" alt="Ndèye Nguénare Diop">
+            <p>Ndèye Nguénare Diop</p>
+            <button class="modifier" data-id="8" >Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img11.jpg" alt="Hadi Hakim">
+            <p>Hadi Hakim</p>
+            <button class="modifier" data-id="9" >Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+    </div>
+
+    <div class="specialistes">
+        <h2>Ophtalmologue :</h2>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img15.jpg" alt="Mare Ndiaye">
+            <p>Mare Ndiaye</p>
+            <button class="modifier" data-id="10" >Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img13.jpeg" alt="Nader Attye">
+            <p>Nader Attye</p>
+            <button class="modifier" data-id="11" >Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img14.png" alt="Aïssatou Diakhate">
+            <p>Aïssatou Diakhate</p>
+            <button class="modifier" data-id="12" >Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+    </div>
+
+    <div class="specialistes">
+        <h2>Pediatre :</h2>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img16.png.crdownload" alt="Saint Joseph">
+            <p>Saint Joseph</p>
+            <button class="modifier" data-id="13" >Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+        <div class="medecin">
+            <img src="../CenlendrierDeReservation/Image/img17.jpeg" alt="Seini Bagnou">
+            <p>Seini Bagnou</p>
+            <button class="modifier" data-id="14" >Modifier</button> <!-- Bouton Modifier ajouté -->
+            <button class="supprimer" onclick="confirmerSuppression(this)">Supprimer</button>
+        </div>
+    </div>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span> <!-- Bouton de fermeture -->
+            <h2>Modifier les informations</h2>
+            <form id="formulaire-modification">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+    
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+    
+                <label for="image">Image (URL) :</label>
+                <input type="text" id="image" name="image" required>
+    
+                <button type="submit">Enregistrer</button>
+                <button type="button" id="annuler-modification">Annuler</button>
+            </form>
+        </div>
+    </div>
+    
+
+</body>
+</html>
+

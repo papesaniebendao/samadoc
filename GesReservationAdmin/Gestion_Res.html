@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gestions des Reservations</title>
+	 <script src="https://kit.fontawesome.com/3c086030c0.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="Gestion_Res.css">
+  <script type="text/javascript" src="g_res.js"></script>
+</head>
+<body>
+    <div class="reservations">
+          <div class="reservation-liste">
+             <h2><i class="fa fa-calendar" aria-hidden="true"></i> Dernieres Reservations</h2>
+             <div class="reservation-box">
+                  <p><strong>Client:</strong> Moussa Faye</p>
+                  <p><strong>Medecin:</strong> Dr Ndiaye</p>
+                  <p><strong>Date et heure:</strong> Mercredi à 08h30</p>
+                  <p><strong>Motif de consultation:</strong> Entretien</p>
+             </div>
+               <!-- Fin de l'encadré pour la réservation de Moussa Faye -->
+                 <div class="buttons">
+                   <a href="page_reporter.html" target="_blank" class="btn-modif">Reporter</a>
+                    <a href=#  class="btn-supp">Supprimer</a>
+                </div>
+              <!-- Boutons de validation -->
+              <div class="reservation-box">
+                 <p><strong>Client:</strong> Pierre Coly Ngom</p>
+                 <p><strong>Medecin:</strong> Dr Ndiouck</p>
+                 <p><strong>Date et heure:</strong> Samedi à 08h30</p>
+                 <p><strong>Motif de consultation:</strong> Blanchissement</p>
+              </div>
+              <!-- Fin de l'encadré pour la réservation de Pierre Coly Ngom -->
+               <div class="buttons">
+                   <a href="page_reporter.html" target="_blank" class="btn-modif">Reporter</a>
+                    <a href=# class="btn-supp">Supprimer</a>
+                </div>
+              <!-- Boutons de validation -->
+                <div class="reservation-box">
+                 <p><strong>Client:</strong> Lamine Faye</p>
+                 <p><strong>Medecin:</strong> Dr Ndiouck</p>
+                 <p><strong>Date et heure:</strong> Mercredi à 11h00</p>
+                 <p><strong>Motif de consultation:</strong> soins dentaires</p>
+              </div>
+              <!-- Fin de l'encadré pour la réservation de Lamine Faye-->
+              <div class="buttons">
+                   <a href="page_reporter.html" target="_blank" class="btn-modif">Repoter</a>
+                   <a href=#  class="btn-supp">Supprimer</a>
+             </div>
+              <!-- Boutons de validation -->
+                <div class="reservation-box">
+                  <p><strong>Client:</strong> Arame Lo</p>
+                  <p><strong>Medecin:</strong> Dr SAAD</p>
+                  <p><strong>Date et heure:</strong> Mardi à 15h</p>
+                  <p><strong>Motif de consulation:</strong> Douleurs</p>
+             </div>
+             <!-- Fin de l'encadré pour la réservation de Arame lo -->
+              <div class="buttons">
+                   <a href="page_reporter.html" target="_blank" class="btn-modif">Reporter</a>
+                    <a href=#  class="btn-supp">Supprimer</a>
+                </div>
+              <!-- Boutons de validation -->
+               <div class="reservation-box">
+                  <p><strong>Client:</strong> Seny Seck</p>
+                  <p><strong>Medecin:</strong> Dr Hadi</p>
+                  <p><strong>Date et heure:</strong> Lundi à 12h30</p>
+                  <p><strong>Motif de consulation:</strong> Chirurgie</p>
+             </div>
+             <!-- Fin de l'encadré pour la réservation de Moussa Faye -->
+             <div class="buttons">
+                   <a href="page_reporter.html" target="_blank" class="btn-modif">Reporter</a>
+                    <a href=# class="btn-supp">Supprimer</a>
+              </div>
+                  <!-- Boutons de validation -->
+                  <div class="reservation-box">
+                    <p><strong>Client:</strong> Aicha Sene </p>
+                    <p><strong>Medecin:</strong> Dr Joseph</p>
+                    <p><strong>Date et heure:</strong> Mercredi à 16h00</p>
+                    <p><strong>Motif de consultation:</strong> Vaccination</p>
+              </div>
+              <!-- Fin de l'encadré pour la réservation de Aicha Sene-->
+                 <div class="buttons">
+                   <a href="page_reporter.html" target="_blank" class="btn-modif">Reporter</a>
+                    <a href=#  class="btn-supp">Supprimer</a>
+                </div>
+              <!-- Boutons de validation -->
+                  <div class="reservation-box">
+                    <p><strong>Client:</strong> Fallou Mbacke Diop </p>
+                    <p><strong>Medecin:</strong> Dr SAAD</p>
+                    <p><strong>Date et heure:</strong> Mercredi à 12h00</p>
+                    <p><strong>Motif de consultation:</strong> Laser</p>
+              </div>
+              <!-- Fin de l'encadré pour la réservation de Fallou Diops-->
+                 <div class="buttons">
+                   <a href="page_reporter.html" target="_blank" class="btn-modif">Reporter</a>
+                    <a href=# class="btn-supp">Supprimer</a>
+                </div>
+              <!-- Boutons de validation -->
+
+
+                <button class="btn-charger">Charger plus...</button>
+        </div>
+      </div>
+      <script>
+    // Sélectionnez tous les boutons "Supprimer" avec la classe "btn-supp"
+    const supprimerButtons = document.querySelectorAll(".btn-supp");
+
+    // Parcourez tous les boutons et ajoutez un gestionnaire de clic à chacun
+    supprimerButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            // Affichez l'alerte lorsque le bouton est cliqué
+            alert("Votre suppression a bien ete prise en compte.");
+        });
+    });
+</script>
+</body>
+</html>

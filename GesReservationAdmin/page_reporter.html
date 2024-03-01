@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reporter</title>
+    <link rel="stylesheet" type="text/css" href="page_reporter.css">
+</head>
+<body>
+    <div>
+        <form class="Formulaire_report" method="POST">
+            <h2>Reporter la réservation</h2>
+            
+            <!-- Champs pour la date -->
+            <label for="jour"><strong>Jour :</strong></label>
+            <input type="number" id="jour" name="jour" min="1" max="31" required>
+            
+            <label for="mois"> <strong>Mois :</strong></label>
+            <select id="selection" name="mois">
+                <option >janvier</option>
+                <option >Fevrier</option>
+                <option >Mars</option>
+                <option >Avril</option>
+                <option >Mai</option>
+                <option >Juin</option>
+                <option >juillet</option>
+                <option >Aout</option>
+                <option >Septembre</option>
+                <option >OCtobre</option>
+                <option >Novembre</option>
+                <option >Decembre</option>s
+            </select>
+              <!-- Champs pour le mois --> 
+            
+            <label for="annee"><strong>Année :</strong></label>
+            <input type="number" id="annee" name="annee" min="2023" required>
+            
+            <!-- Champs pour l'heure -->
+            <label for="heure"><strong>Heure :</strong></label>
+            <select id="selection" name="heure">
+                <option >08h</option>
+                <option >09h</option>
+                <option >10h</option>
+                <option >11h</option>
+                <option >12h</option>
+                <option >13h</option>
+                <option >14h</option>
+                <option >15h</option>
+                <option >16h</option>
+                <option >17h</option>
+                <option >18h</option>
+            </select>
+            <label for="minutes"><strong>Minutes :</strong></label>
+            <select id="selection" name="minutes">
+                <option value="00">00mn</option>
+                <option value="30">30mn</option>
+                <option value="45">45mn</option>
+            </select>
+            
+            <!-- Bouton pour enregistrer -->
+            <input type="submit" value="Enregistrer">
+        </form>
+    </div>
+</body>
+</html>

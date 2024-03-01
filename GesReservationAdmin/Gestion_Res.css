@@ -1,0 +1,88 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+   background: url('medical.jpg') no-repeat ;
+   background-size: cover;
+    
+}
+
+
+
+/* Styles pour le conteneur des reservations*/
+.reservations{
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 12px;
+
+}
+
+/* Styles pour la liste de réservations */
+.reservation-liste{
+    padding: 20px;
+    color: blacks;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Styles pour l'encadré de réservation */
+.reservation-box {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px; /* Rayon de bordure  */
+    padding: 10px;
+    margin: 30px 20px 10px 0; /* Espacement autour de la boîte (haut, droite, bas, gauche) */
+    box-sizing: border-box;
+    
+}
+
+.btn-modif {
+    display: inline-block;
+    background-color: #3498db; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Supprime la soulignement par défaut des liens */
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+   
+}
+
+/* Style pour le bouton "Supprimer" */
+.btn-supp {
+    display: inline-block;
+    background-color: #e74c3c; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    padding: 5px 10px; /* Espacement intérieur */
+    text-decoration: none; /* Supprime la soulignement par défaut des liens */
+    border: none; /* Supprime la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    margin: 10px; /* Marge extérieure */
+    font-size: 14px;
+}
+
+
+.btn-charger {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid #ccc;
+    margin-top: 10px;
+}
+
+.btn-charger:hover {
+    background-color: gray;
+}

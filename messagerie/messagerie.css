@@ -1,0 +1,168 @@
+/*application du style sur le corps du document */
+body{
+    background: aqua;
+    justify-content: center;/*permet de centrer l'element contenu dans le body */
+    align-items: center;/*permet de centrer l'element contenu dans le body horizontalement */
+    display: flex; /*permet de rendre le contenu du document HTML flexible permettant ainsi une bonne affichage selon le support */
+    margin: 0;
+    min-height: 100vh; /* permet de fixer la hauteur minimale du corps de document a 100 vh */
+    height: auto; /* Sinon la hauteur sera fixee par le navigateur */
+    width: 75%;
+    background-color: antiquewhite;
+    background-image: url(imagemessagerie.jpg);
+}
+
+
+.navbar{
+    /*width: 1292px;*/
+    height: 62px;
+    background: rgb(0, 220, 220);
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 50px;
+ }
+.navbar h2{
+    padding-left: 5%;
+}
+
+ #ul{
+    position: relative;
+    top: -50px;
+    right: 100px;
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+#ul li{
+    margin-left: 20px;
+    list-style: none;
+}
+
+#ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1{
+    
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    left: 45%;
+    text-justify: auto;    
+   text-align: center;
+   justify-content: center;
+   margin-top: 10%;
+
+}
+
+.container2{
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+    left: 40%;
+    background: white;
+}
+
+/*style sur le titre du nom envoyer un message */
+.header2{
+    background: grey;
+    color: aqua;
+    height: auto;
+}
+
+.header2 h2{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    font-style: italic;    
+}
+
+/*style sur le formulaire */
+.formulaire .champs{
+    padding-bottom: 30px;
+}
+
+.formulaire{
+    padding: 30px 50px;
+    border-color: white;
+}
+
+/* style sur les labels */
+.champs label{
+    background: grey;
+    display: inline-block;
+    position: absolute;
+    margin-bottom: 2px;
+}
+.champs input{
+    margin-top: 2px;
+    width: 100%;
+    min-height: 25px;
+    border-top: 3px solid grey;
+    border-left: 4px solid grey;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+input:focus{
+    outline-color:grey;
+    border-bottom: 2ps solid grey;
+    border-right: 2px solid grey;
+}
+
+button{
+    background: grey;
+    width: 100%;
+    border-right: 4px solid black;
+    border-bottom: 3px solid black;
+}
+
+
+
+/*
+.header1{
+    background: grey;
+    text-align: center;
+    height: auto;
+}
+
+.container{
+    background:white;
+    justify-content: center;
+}
+.container .header2{
+    background: orangered;
+    text-align: center;
+    font-style: italic;
+    position: relative;
+    width:300px;
+    height: 50px;
+    padding: 5px;
+    /*margin-left: 450px;
+}
+ .formulaire{
+    background: green;
+    width: 500px;
+    max-width: 100%;
+    /*margin-left: 450px;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.champs{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+*/

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="tabAdmin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Tableau Administratif - SamaDoc</title>
+</head>
+<body>
+    <div class="admin-page">
+        <div class="admin-gauche">
+            <h1>SamaDoc</h1>
+            <ul class="links">
+                <li><a href="#"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="../Gestion des utilisateurs/gestion_des_utilisateurs.html"><i class="fas fa-users"></i> Gestion des Utilisateurs</a></li>
+                <li><a href="../GestionDesContinues/GestionDesContenus.html"><i class="fas fa-book"></i> Gestion des Contenus Statiques</a></li>
+                <li><a href="../gestion-commentaire/gestion_coms.html"><i class="fas fa-comments"></i> Gestion des Commentaires et Avis</a></li>
+                <li><a href="../gestionDesPrestataires/prestataire.html"><i class="fas fa-hospital"></i> Gestion des Prestataires</a></li>
+                <li><a href="../GesReservationAdmin/Gestion_Res.html"><i class="fas fa-calendar-alt"></i> Gestion des Réservations</a></li>
+            </ul>
+            <button class="dark-mode-btn">Mode Sombre</button>
+        </div>
+       <div class="admin-droite">
+           <div class="icons-section">
+                 <!-- Section pour afficher les icônes et les titres -->
+                 <div class="icon-box">
+                      <!-- Boîte pour afficher le nombre de clients -->
+                     <i class="fas fa-user-friends"> <a href="#" name="Gestion-clients"></a> </i>
+                          <h2>Nombre de Clients inscrits</h2>
+                          <p>4450</p>
+                 </div>
+                 <div class="icon-box">
+                     <!-- Boîte pour afficher le nombre de médecins -->
+                     <i class="fas fa-user-md"> <a href="#"name="Gestion-medecin"></a> </i>
+                     <h2>Nombre de Médecins inscrits</h2>
+                      <p>567</p>
+                 </div>
+                 <div class="icon-box">
+                       <!-- Boîte pour afficher le nombre de commentaires -->
+                       <a href="#" name="Gestion-commentaire"></a>
+                      <i class="fas fa-comments"> </i>
+                      <h2>Commentaires laisses</h2>
+                       <p>42000</p>
+                 </div>
+          </div>
+          <div class="latest-interactions">
+               <h2>Dernières Activités </h2>
+               <ul>
+                    <li><i class="fas fa-envelope"></i> Sam Wilson s'est inscrit(e) à SamaDoc il y a...20 mn</li>
+                     <li><i class="fas fa-envelope"></i> Ndeye Ba a laissé une reaction il y a...30mn</li>
+                    <li><i class="fas fa-envelope"></i> Adama Toure s'est inscrit(e) à SamaDoc il ya...55mn</li>
+                    <li><i class="fas fa-envelope"></i> Souleymane Samb a réservé le praticien Lamine Camara il y a...59mn</li> 
+                    <li><i class="fas fa-envelope"></i> Lamine Diop a réservé le praticien Moctar Sarr il y a...1h20mn</li>
+                    <li><i class="fas fa-envelope"></i> Ndeye Sene a une reaction il y a..1h24mn.</li>
+                    <li><i class="fas fa-envelope"></i> Adama Paye a réservé le praticien David Sarr il y a...1h30mn</li>
+                   <li><i class="fas fa-envelope"></i> Salimata Sy s'est inscrit(e) à SamaDoc il y a...1h50mn</li>
+                  <li><i class="fas fa-envelope"></i> Souleymane Samb a réservé le praticien Dianna Camara il y a...2h</li> 
+                  <li><i class="fas fa-envelope"></i> Assanne Seck a laissé une reaction il y a...2h10mn</li>
+                   <li><i class="fas fa-envelope"></i> Fallou Sall s'est inscrit(e) à SamaDoc il y a...2h15mn</li>
+                   <li><i class="fas fa-envelope"></i> Soukeye Gaye s'est inscrit(e) à SamaDoc il y a...2h20mn</li>
+                    <li><i class="fas fa-envelope"></i> Saliou Dia a réservé le praticien Abdou Sarr il y a...1h30mn</li>
+              </ul>
+         </div>
+      </div>
+  </div>
+    <script src="tabAdmin.js"></script>
+</body>
+</html>

@@ -1,0 +1,496 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 300vh;
+}
+
+  /* Styles de l'en-tête */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 220, 220);
+    color: ghostwhite;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    transition: background-color 0.3s;
+    z-index: 100;
+}
+
+/* Styles de l'en-tête avec fond fixe */
+header.fixed {
+  background-color: rgb(0, 220, 220); /* Fond fixe après le défilement */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+header .Mon-logo {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px; /* Taille de la police */
+  font-weight: bold; /* Épaisseur de la police */
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+}
+
+/* Ajoutez un espace entre l'icône et le texte */
+nav ul li i {
+  margin-right: 8px;
+}
+
+nav ul li {
+  margin-right: 20px; /* Espace entre les éléments */
+  font-size: 16px; /* Taille de la police des éléments de la liste */
+}
+
+/* Style pour mettre en évidence l'élément survolé */
+nav ul li:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: underline;
+}/*fin des selecteurs sur l'entete*/
+a{
+  color: white;
+  text-decoration: none;
+
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#pageAccueil
+{
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Enlève le soulignement */
+}
+
+/*Styles pour les différentes sections*/
+.section {
+height:100vh;
+color: white;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 2em;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.mybody{
+    width: 100%;
+    height: 200vh;
+    position: absolute;
+    top: 80px;
+}
+
+.mybody h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.stat1{
+    width: 40%;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.47);
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+}
+
+.stat1:hover{
+    border: 7px solid rgba(128, 128, 128, 0.189);
+    border-top: none;
+    border-radius: 0;
+    border-right: none
+}
+
+.stat1 h3{
+    text-align: center;
+    color: rgb(0, 220, 220);
+}
+
+.stat1 li{
+    padding-top: 10px;
+}
+
+.stat2{
+    width: 45%;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.47);
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    left: 630px;
+    top: -200px;
+}
+
+.stat2:hover{
+    border: 7px solid rgba(128, 128, 128, 0.189);
+    border-top: none;
+    border-radius: 0;
+    border-right: none
+}
+
+.stat2 h3{
+    text-align: center;
+    color: rgb(0, 220, 220);
+}
+
+.stat2 li{
+    padding-top: 10px;
+}
+
+.stat3{
+    width: 40%;
+    height: 170px;
+    border: 1px solid rgba(0, 0, 0, 0.47);
+    border-radius: 7px;
+    left: 10px;
+    cursor: pointer;
+    position: relative;
+    top: -100px;
+}
+
+.stat3:hover{
+    border: 7px solid rgba(128, 128, 128, 0.189);
+    border-top: none;
+    border-radius: 0;
+    border-right: none
+}
+
+.stat3 h3{
+    text-align: center;
+    color: rgb(0, 220, 220);
+}
+
+.stat3 li{
+    padding-top: 10px;
+}
+
+.stat4{
+    width: 45%;
+    height: 170px;
+    border: 1px solid rgba(0, 0, 0, 0.47);
+    border-radius: 7px;
+    left: 630px;
+    cursor: pointer;
+    position: relative;
+    top: -270px;
+}
+
+.stat4:hover{
+    border: 7px solid rgba(128, 128, 128, 0.189);
+    border-top: none;
+    border-radius: 0;
+    border-right: none
+}
+
+.stat4 h3{
+    text-align: center;
+    color: rgb(0, 220, 220);
+}
+
+.stat4 li{
+    padding-top: 10px;
+}
+
+.stat5{
+    width: 40%;
+    height: 170px;
+    border: 1px solid rgba(0, 0, 0, 0.47);
+    border-radius: 7px;
+    left: 10px;
+    cursor: pointer;
+    position: relative;
+    top: -190px;
+}
+
+.stat5:hover{
+    border: 7px solid rgba(128, 128, 128, 0.189);
+    border-top: none;
+    border-radius: 0;
+    border-right: none
+}
+
+.stat5 h3{
+    text-align: center;
+    color: rgb(0, 220, 220);
+}
+
+.stat5 li{
+    padding-top: 10px;
+}
+.stat6{
+    width: 45%;
+    height: 170px;
+    border: 1px solid rgba(0, 0, 0, 0.47);
+    border-radius: 7px;
+    left: 630px;
+    cursor: pointer;
+    position: relative;
+    top: -360px;
+}
+
+.stat6:hover{
+    border: 7px solid rgba(128, 128, 128, 0.189);
+    border-top: none;
+    border-radius: 0;
+    border-right: none
+}
+
+.stat6 h3{
+    text-align: center;
+    color: rgb(0, 220, 220);
+}
+
+.stat6 li{
+    padding-top: 10px;
+}
+
+.stat7{
+    width: 40%;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.47);
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+    top: -250px;
+}
+
+.stat7:hover{
+    border: 7px solid rgba(128, 128, 128, 0.189);
+    border-top: none;
+    border-radius: 0;
+    border-right: none
+}
+
+.stat7 h3{
+    text-align: center;
+    color: rgb(0, 220, 220);
+}
+
+.stat7 li{
+    padding-top: 10px;
+}
+
+.stat8{
+    width: 45%;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.47);
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    left: 630px;
+    top: -450px;
+}
+
+.stat8:hover{
+    border: 7px solid rgba(128, 128, 128, 0.189);
+    border-top: none;
+    border-radius: 0;
+    border-right: none
+}
+
+.stat8 h3{
+    text-align: center;
+    color: rgb(0, 220, 220);
+}
+
+.stat8 li{
+    padding-top: 10px;
+}
+
+
+
+.first-section {
+    background: url('doctor.jpg') no-repeat center top / cover;
+    height: 836px;
+    margin-top: 10px;
+    animation: alternateBackgrounds 20s linear infinite;
+}
+    
+/* Styles pour la fenêtre modale */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Placez la fenêtre modale au-dessus de tous les autres éléments */
+}
+    
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    z-index: 1001; /* Placez le contenu de la fenêtre modale au-dessus de la fenêtre modale elle-même */
+}
+ #openModal {
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement */
+}
+/* Style for the "Se Connecter" link */
+#connexion-link {
+    background-color: rgb(0, 220, 220);
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    min-width: 500px; /* Adjust this value for desired width */
+    text-align: center; /* Center the text horizontally */
+    margin-top: 0;
+    transform: translateY(-50%);
+}
+    
+/* Style for the login link container */
+  .login-link {
+    z-index: 100;
+}
+    
+/* Styles pour le footer en général */
+footer {
+    background-color: rgb(0, 220, 220);
+    color: #fff;
+    padding: 40px 0;
+    position: relative;
+    top: 450px;
+}
+    
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+    
+.footer-section {
+    flex-basis: 22%;
+}
+    
+.footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+    
+.footer-section p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+   
+/* Vos styles existants... */
+    
+/* Styles pour la section Spécialités Médicales */
+.special {
+    display: flex;
+    flex-direction: column;
+}
+    
+.special h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+    
+.special ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    
+.special-list li {
+    margin-bottom: 5px;
+}
+
+/* Vos styles existants... */
+    
+    
+.social-icon {
+    font-size: 24px;
+    color: white;
+    margin-right: 15px;
+    transition: color 0.3s;
+    padding-left: 10px;
+}
+    
+.social-icon:hover {
+    color: #00a0e9;
+}
+    
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+    
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+    
+/* Styles pour les médias mobiles (ajustez selon vos besoins) */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+      
+    .footer-section {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}
+    
+#Apropos{
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement */
+}
+    
+#medecin{
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement */
+}
+
+.value{
+    color: rgb(0, 220, 220);
+    font-weight: bold;
+    font-size: 15px;
+}

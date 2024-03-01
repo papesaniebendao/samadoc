@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="supprimer_compte_utilisateur.css">
+    <title>Suppression du compte utilisateur</title>
+</head>
+<body>
+    <div class="conteneur">
+        <div class="navbar">
+            <h2>SamaDoc</h2>
+            <nav>
+                <ul id="ul">
+                    <li><i class="fas fa-stethoscope"></i><a href="#"> Vous etes medecin</a></li>
+                    <li><i class="fas fa-question-circle"></i><a href="#" id="openModal"> Centre d'aide</a></li>
+                    <li><i class="fas fa-user"></i><a href="inscriptionConnexion/connexionInscription.html" id="connexion"> Se Connecter</a></li>
+                </ul>
+            </nav>
+        </div>   
+        <div class="supprimer">
+            <h1>Bienvenue dans la partie suppression  du compte utilisateur !</h1><br>
+            <h2 id="titre2">Supprimer le compte d'utilisateur</h2><br>
+            <form action="../model/supprimer_compte_utilisateur.php" method="post">
+               <div class="champs">
+                  <label for="nom">Nom d'utilisateur à supprimer :</label><br>
+                  <input type="text" name="nom" id="nom"><br> 
+               </div>
+               <div class="champs">               
+                  <label for="supprenom">Prénom à supprimer :</label><br>
+                  <input type="text" name="prenom" id="supprenom"><br>
+               </div>
+               <div class="champs">                
+                  <label for="supemail">Email à supprimer :</label><br>
+                  <input type="email" name="email" id="supemail"><br>
+               </div>
+               <div class="champs">               
+                 <label for="motdepassverification">Votre mot de pass :</label><br>
+                 <input type="password" name="motdepasse" id="motdepassverification"> 
+               </div>
+               <div class="champs">                
+                 <input type="submit" name="Supprimer"  value="Supprimer" id="Supprimer">
+               </div>
+            </form>
+        </div>    
+        </div>
+    </div>
+</body>
+</html>

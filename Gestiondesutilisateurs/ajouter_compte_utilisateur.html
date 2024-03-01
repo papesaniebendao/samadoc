@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ajouter_compte_utilisateur.css">
+    <title>Ajout du compte utilisateur</title>
+</head>
+<body>  
+    <div class="conteneur">     
+        <div class="navbar">
+            <h2>SamaDoc</h2>
+            <nav>
+                <ul id="ul">
+                    <li><i class="fas fa-stethoscope"></i><a href="#"> Vous etes medecin</a></li>
+                    <li><i class="fas fa-question-circle"></i><a href="#" id="openModal"> Centre d'aide</a></li>
+                    <li><i class="fas fa-user"></i><a href="inscriptionConnexion/connexionInscription.php" id="connexion"> Se Connecter</a></li>
+                </ul>
+            </nav>
+        </div>            
+        <div class="ajouter">
+            <h1>Bienvenue dans la partie ajout d'utilisateur !</h1><br><br>
+            <h2 id="titre2">Ajouter un compte d'utilisateur</h2>
+            <form action="../model/ajouter_compte_utilisateur.php" method="post">
+                <div class="champs">
+                    <label for="nom">Nom d'utilisateur :</label><br>
+                    <input type="text" id="nom" name="nom"><br>
+                </div>
+                <div class="champs">
+                    <label for="prenom" >Prénom d'utilisateur :</label><br>
+                    <input type="text" id="prenom" name="prenom"><br>
+                </div>
+               <div class="champs">
+                   <label for="adresseMail">Email :</label><br>
+                   <input type="email" id="email" name="email"><br>
+               </div>
+                <div class="champs">
+                    <label for="numerotelphone">Numéro Téléphone :</label><br>
+                   <input type="tel" id="numerotelephone" name="numerotelephone"><br>
+                </div>
+                <div class="champs">
+                    <label for="motdepasse">Mot de pass :</label><br>
+                    <input type="password" id="motdepasse" name="motdepasse"><br>
+                </div>
+                <div class="champs">
+                    <label for="confirmer">confirmer :</label><br>
+                    <input type="password" id="motdepassconfirmation" name="confirmemotdepasse"><br>                
+                </div>
+                <div class="champs">
+                    <input type="submit" value="Ajouter" id="Ajouter"><br> 
+                </div>                               
+            </form>
+        </div>        
+    </div>
+</body>
+</html>
